@@ -19,7 +19,7 @@ public abstract class AbstractModel {
         Connection connection = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/supermarket", "root", "toan110720");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/supermarket", "", "");
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(AbstractModel.class.getName()).log(Level.SEVERE, null, ex);
         }
